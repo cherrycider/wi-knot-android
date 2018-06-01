@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.cherrycider.android.wiknot.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/plain_background_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wiknotLightBlue"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="showBSSID"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_tilted_wite_text_360x120" />
+
+
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        android:paddingTop="10dp"
+        android:text="wi-fi . . . "
+
+        android:textAlignment="center"
+        android:textColor="@color/colorWite"
+        android:textSize="32sp" />
+
+    <ImageButton
+        android:id="@+id/hotspot"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/ssid"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.7"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/router_white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotspot"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/menu_6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.7"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="show_menu_6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu_white" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/menu_6"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <ImageButton
+                android:id="@+id/menu_1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.7"
+                android:background="@color/colorTransparent"
+                android:contentDescription="msg"
+                android:cropToPadding="true"
+                android:onClick="show_menu_1"
+                android:padding="8dp"
+
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/people_wite"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/menu_2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.7"
+                android:background="@color/colorTransparent"
+                android:contentDescription="msg"
+                android:cropToPadding="true"
+                android:onClick="show_menu_2"
+                android:padding="8dp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/folders_wite" />
+
+
+            <ImageButton
+                android:id="@+id/menu_4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.7"
+                android:background="@color/colorTransparent"
+                android:contentDescription="msg"
+                android:cropToPadding="true"
+                android:onClick="show_menu_4"
+                android:padding="8dp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/service_wite" />
+
+            <ImageButton
+                android:id="@+id/menu_5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.7"
+                android:background="@color/colorTransparent"
+                android:contentDescription="msg"
+                android:cropToPadding="true"
+                android:onClick="show_menu_5"
+                android:padding="8dp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/event_baloon_wite" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_scroll_buttons"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/menu_1_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_1_title"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/menu_1_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goPopUp"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_2"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_3"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_4"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_5"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_6"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_1_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goChat"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_1_7"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_scroll_buttons"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/menu_2_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_2_title"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/menu_2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_2_1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_2_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_2_2"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_2_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_2_3"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_scroll_buttons"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu3_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/menu_3_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_3_title"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/menu_3_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_3_1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_3_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_3_2"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_3_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_3_3"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_scroll_buttons"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu4_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/menu_4_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_4_title"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/menu_4_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_4_1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_4_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_4_2"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_4_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_4_3"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_4_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_4_4"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_scroll_buttons"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu5_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/menu_5_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_5_title"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/menu_5_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_5_1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_5_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_5_2"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_5_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_5_3"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_5_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_5_4"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu_6"
+
+        android:layout_marginTop="72dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menu6_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/colorBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/wiknotDarkBlue" />
+
+            <TextView
+                android:id="@+id/menu_6_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorTransparent"
+
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:text="@string/menu_6_title"
+                android:textColor="@color/colorWite"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/menu_6_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_6_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goIntro"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_5"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_6_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goPreferences"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_6"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_6_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goMyProfile"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_7"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_6_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:onClick="goExit"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_8"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/menu_6_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_9"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/menu_6_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/menu_6_10"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWite"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="wiknotDarkBlue">#042340</color>
+    <color name="wiknotLightBlue">#46748a</color>
+
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWite">#ffffff</color>
+    <color name="colorGray">#424242</color>
+    <color name="colorGreen">#1B5E20</color>
+    <color name="colorTransparentWite">#80FFFFFF</color>
+    <color name="colorTransparentBlack">#80000000</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/colorBlack</item>
+        <item>@color/colorBlack</item>
+        <item>@color/colorBlack</item>
+        <item>@color/colorBlack</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/colorWite</item>
+        <item>@color/colorWite</item>
+        <item>@color/colorWite</item>
+        <item>@color/colorWite</item>
+    </array>
+
+</resources>
+

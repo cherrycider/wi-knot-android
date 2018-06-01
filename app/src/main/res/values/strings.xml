@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">wi knot</string>
+
+    <string name="menu_1_title">comminication</string>
+    <string name="menu_1_1">send a message</string>
+    <string name="menu_1_2">friend knots</string>
+    <string name="menu_1_3">other open knots</string>
+    <string name="menu_1_4">create my friend knot</string>
+    <string name="menu_1_5">delete my friend knot</string>
+    <string name="menu_1_6">invite to my friend knot </string>
+    <string name="menu_1_7">chat</string>
+
+
+    <string name="menu_2_title">files exchange </string>
+    <string name="menu_2_1">send file</string>
+    <string name="menu_2_2">share your folder</string>
+    <string name="menu_2_3">browse shared folders</string>
+
+
+
+    <string name="menu_3_title">friend knots</string>
+    <string name="menu_3_1">create my friend knot</string>
+    <string name="menu_3_2">delete my friend knot</string>
+    <string name="menu_3_3">send invitation</string>
+
+    <string name="menu_4_title">service knots</string>
+    <string name="menu_4_1">make an order</string>
+    <string name="menu_4_2">schedule appointment</string>
+    <string name="menu_4_3">create my service knot</string>
+    <string name="menu_4_4">delete my service knot</string>
+
+    <string name="menu_5_title">events</string>
+    <string name="menu_5_1">sign up on event </string>
+    <string name="menu_5_2">list of participants</string>
+    <string name="menu_5_3">create my event</string>
+    <string name="menu_5_4">delete my event</string>
+
+    <string name="menu_6_title">menu</string>
+    <string name="menu_6_1">landscape orientation</string>
+    <string name="menu_6_2">portrait orientation</string>
+    <string name="menu_6_3">automatic orientation</string>
+    <string name="menu_6_4">history</string>
+    <string name="menu_6_5">play intro again</string>
+    <string name="menu_6_6">preferences</string>
+    <string name="menu_6_7">my profile</string>
+    <string name="menu_6_8">exit</string>
+    <string name="menu_6_9"></string>
+    <string name="menu_6_10"></string>
+
+
+    <string name="chat">chat</string>
+    <string name="send_message">send message</string>
+
+
+    <string name="public_chat">public chat</string>
+
+    <string name="people_online">people online</string>
+    <string name="rescan_people_online">rescan people online</string>
+
+    <string name="preferences">preferences</string>
+    <string name="screen_orientation">screen orientation</string>
+    <string name="logcat_dump">logcat dump</string>
+    <string name="notification_sound">notification sound</string>
+
+    <string name="my_profile">my profile</string>
+    <string name="my_name">my name</string>
+    <string name="more_info">more info</string>
+
+
+    <string name="My_Profile_is_saved">my profile is saved</string>
+    <string name="Please_write_your_name">Please write your name</string>
+    <string name="Picture_saved">picture saved</string>
+    <string name="Picture_NOT_saved">picture NOT saved</string>
+
+
+
+
+    <string name="Add_Photo">add photo</string>
+    <string name="Take_Photo">take photo</string>
+    <string name="Choose_from_Library">choose from file</string>
+    <string name="Cancel">cancel</string>
+
+    <string name="sorry_wi_knot_will_not_work_properly">sorry, wi knot will not work properly :(</string>
+    <string name="thank_you">thank you! :)</string>
+
+
+
+    <string name="check_your_WiFi_connection">check your\nWiFi connection!</string>
+
+
+    <string name="wi_knot_is_started">wi.knot is started</string>
+    <string name="wi_knot_is_stopped">wi.knot is stopped</string>
+
+
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="saving_image">saving image</string>
+    <string name="preparing_card">preparing card</string>
+    <string name="no_storage_card">no storage card</string>
+    <string name="not_enough_space">not_enough_space</string>
+
+    <string name="saved">saved</string>
+
+    <string name="name">name</string>name
+
+
+    <string name="OFFLINE">offline</string>name
+
+
+
+
+    <string name="title_activity_welcome">home screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">this app uses WI-FI</string>
+    <string name="slide_1_desc">to communicate with people\naround you</string>
+
+    <string name="slide_2_title">left or right</string>
+    <string name="slide_2_desc">local public chat\npeople around</string>
+
+    <string name="slide_3_title">Great Discounts at night!</string>
+    <string name="slide_3_desc"></string>
+
+    <string name="slide_4_title">just kidding \nof course it is free of charge  :)</string>
+    <string name="slide_4_desc"></string>
+
+    <string name="play_again_desc">to see the welcome slider again goto menu</string>
+    <string name="play_again">play again</string>
+    <string name="check_your_WiFI_connection">check your\nWiFi connection!</string>
+
+    <string name="plz_wait">please wait</string>
+
+
+    <string name="status_1">hello people!\ngender:        age:        \nhobby:                   \nphone no:                  \n</string>
+
+    <string name="funny_statuses">1,2,3,4,5,6,7</string>
+
+</resources>

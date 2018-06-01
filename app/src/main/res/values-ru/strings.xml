@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">wi knot</string>
+
+    <string name="menu_1_title">общение</string>
+    <string name="menu_1_1">отправить сообщение</string>
+    <string name="menu_1_2">узелки друзей</string>
+    <string name="menu_1_3">чужие открытые узелки</string>
+    <string name="menu_1_4">создать свой узелок друзей</string>
+    <string name="menu_1_5">удалить свой узелок друзей</string>
+    <string name="menu_1_6">пригласить в свой узелок друзей</string>
+    <string name="menu_1_7">чат</string>
+
+
+    <string name="menu_2_title">обмен файлами</string>
+    <string name="menu_2_1">отправить файл</string>
+    <string name="menu_2_2">поделиться своей папкой</string>
+    <string name="menu_2_3">зайти в доступные папки</string>
+
+
+
+    <string name="menu_3_title">узелки друзей</string>
+    <string name="menu_3_1">создать свой узелок друзей</string>
+    <string name="menu_3_2">удалить свой узелок друзей</string>
+    <string name="menu_3_3">пригласить</string>
+
+    <string name="menu_4_title">узелки услуг</string>
+    <string name="menu_4_1">сделать заказ</string>
+    <string name="menu_4_2">записаться на время</string>
+    <string name="menu_4_3">создать свой узелок услуг</string>
+    <string name="menu_4_4">удалить свой узелок услуг</string>
+
+    <string name="menu_5_title">мероприятия</string>
+    <string name="menu_5_1">зарегистрироваться</string>
+    <string name="menu_5_2">список участников</string>
+    <string name="menu_5_3">создать своё мероприятие</string>
+    <string name="menu_5_4">удалить своё мероприятие</string>
+
+    <string name="menu_6_title">меню</string>
+    <string name="menu_6_1">горизонтальная ориентация</string>
+    <string name="menu_6_2">вертикальная ориентация</string>
+    <string name="menu_6_3">автоматическая ориентация</string>
+    <string name="menu_6_4">история</string>
+    <string name="menu_6_5">описание</string>
+    <string name="menu_6_6">настройки</string>
+    <string name="menu_6_7">мой профиль</string>
+    <string name="menu_6_8">выход</string>
+    <string name="menu_6_9"></string>
+    <string name="menu_6_10"></string>
+
+
+    <string name="chat">чат</string>
+
+    <string name="public_chat">общий чат</string>
+
+    <string name="people_online">кто в сети</string>
+
+    <string name="preferences">настройки</string>
+    <string name="screen_orientation">ориентация экрана</string>
+    <string name="logcat_dump">логирование logcat</string>
+    <string name="notification_sound">звук уведомления</string>
+
+    <string name="my_profile">мой профиль</string>
+    <string name="my_name">моё имя</string>
+    <string name="more_info">о себе</string>
+
+    <string name="My_Profile_is_saved">профиль сохранен</string>
+    <string name="Please_write_your_name">пожалуйста введите свое имя</string>
+    <string name="Picture_saved">фото сохранено</string>
+    <string name="Picture_NOT_saved">фото НЕ сохранено</string>
+
+
+    <string name="Add_Photo">добавить свою фотографию</string>
+    <string name="Take_Photo">сделать снимок</string>
+    <string name="Choose_from_Library">выбрать из телефона</string>
+    <string name="Cancel">отменить</string>
+
+
+    <string name="check_your_WiFI_connection">проверьте\nWiFi подключение!</string>
+
+    <string name="wi_knot_is_started">wi.knot запущен</string>
+    <string name="wi_knot_is_stopped">wi.knot остановлен</string>
+
+
+
+
+
+    <string name="cancel">отмена</string>
+    <string name="save">сохранить</string>
+    <string name="saving_image">сохранить изображение</string>
+    <string name="preparing_card">подготовка карты памяти</string>
+    <string name="no_storage_card">нет карты памяти</string>
+    <string name="not_enough_space">нет свободного места</string>
+    <string name="plz_wait">подождите</string>
+
+    <string name="saved">сохранено</string>
+
+    <string name="name">имя</string>
+    <string name="check_your_WiFi_connection">проверьте\nWiFi подключение!</string>
+    <string name="next">ДАЛЕЕ</string>
+    <string name="skip">ПРОПУСТИТЬ</string>
+    <string name="start">ВСЁ ПОНЯТНО</string>
+    <string name="send_message">отослать сообщение</string>
+    <string name="play_again">проиграть снова</string>
+    <string name="play_again_desc">используйте меню чтобы проиграть описание снова</string>
+    <string name="status_1">привет всем!\nпол:          возраст:              \nувлечения                         \nномер телефона:                      \n</string>
+    <string name="title_activity_welcome">домашний экран</string>
+    <string name="rescan_people_online">повторно поиск участников </string>
+    <string name="thank_you">спасибо! :)</string>
+    <string name="sorry_wi_knot_will_not_work_properly">извините, wi knot не сможет работать нормально :(  </string>
+    <string name="OFFLINE">не в сети</string>
+    <string name="slide_1_title">wi.knot использует WI-FI</string>
+    <string name="slide_1_desc">для общения с людьми\nвокруг вас</string>
+    <string name="slide_2_desc">общий чат\nкто рядом</string>
+    <string name="slide_2_title">влево или вправо</string>
+    <string name="slide_3_title">Большие Скидки по ночам!</string>
+    <string name="slide_4_title">шутка\nконечно же все бесплатно :)</string>
+    name
+
+
+</resources>

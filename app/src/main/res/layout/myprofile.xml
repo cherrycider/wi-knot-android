@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wiknotDarkBlue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:alpha="0.5"
+            android:background="@color/colorTransparent"
+            android:onClick="backArrowMyProfile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_left_wite" />
+
+        <TextView
+            android:id="@+id/myDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/my_profile"
+            android:alpha="0.5"
+            android:textColor="@color/colorWite"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/menu_white">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/myNameBar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/wiknotDarkBlue"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/colorWite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0.3"
+                android:background="@color/colorGray"
+                android:padding="5dp"
+                android:text="@string/my_name"
+                android:textColor="@color/colorWite"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/myName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:alpha="0.7"
+                android:layout_weight="4"
+                android:background="@color/wiknotDarkBlue"
+                android:backgroundTint="@color/wiknotDarkBlue"
+                android:hint="@string/my_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:maxLines="1"
+
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWite"
+                android:textSize="12pt" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/moreInfoBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:alpha="0.3"
+                    android:background="@color/colorGray"
+                    android:padding="5dp"
+                    android:text="@string/more_info"
+                    android:textColor="@color/colorWite"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/moreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_below="@+id/moreInfoBar"
+                    android:layout_gravity="top"
+                    android:layout_weight="4"
+                    android:background="@color/wiknotDarkBlue"
+                    android:backgroundTint="@color/wiknotDarkBlue"
+                    android:alpha="0.3"
+                    android:gravity="top"
+                    android:hint="@string/more_info"
+                    android:paddingTop="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWite" />
+
+                <ImageButton
+                    android:id="@+id/helptofill"
+                    android:layout_below="@+id/moreInfoBar"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="24dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/colorTransparent"
+                    android:alpha="0.4"
+                    android:src="@drawable/fill"
+                    android:onClick="fillMoreInfo"/>
+
+                <ProgressBar
+                    android:id="@+id/helptofillprogress"
+                    android:layout_below="@+id/moreInfoBar"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="24dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                     />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:alpha="0.5"
+        android:background="@color/colorBlack">
+
+        <ImageButton
+            android:id="@+id/btnHideFace"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:background="@color/colorBlack"
+            android:onClick="hideMyFace"
+            android:src="@drawable/hide_face_white_48dp" />
+
+
+        <ImageButton
+            android:id="@+id/btnShowFace"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:background="@color/colorBlack"
+            android:onClick="showMyFace"
+            android:src="@drawable/ic_face_white_48dp" />
+
+        <ImageButton
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:background="@color/colorBlack"
+            android:onClick="selectImageFromCameraOrGallery"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:background="@color/colorBlack"
+            android:onClick="saveMyProfile"
+            android:src="@drawable/check" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

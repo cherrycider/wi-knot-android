@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wiknotLightBlue"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/friend_knots"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="showBSSID"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/people_wite"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/list_of_friend_knots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="friend knots online"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/folders"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="showBSSID"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folders_wite"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/list_of_folders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="folders online"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/service_knots"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="showBSSID"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/service_wite"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/list_of_service_knots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="service knots online"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/events"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="showBSSID"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/event_baloon_wite"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/list_of_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="events online"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/list_of_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/people_online"
+        android:textAlignment="center"
+        android:textColor="@color/colorWite"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/peoplelistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progress_people_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        >
+    </ProgressBar>
+
+    <ImageButton
+        android:id="@+id/rescan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:alpha="0.8"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:onClick="rescanPeople"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rotate_right"
+        />
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/friends_online"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.95"
+                android:background="@color/colorTransparent"
+                android:cropToPadding="true"
+                android:onClick="showFriendKnotsOnline"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/people_wite"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/folders_online"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.95"
+                android:background="@color/colorTransparent"
+                android:cropToPadding="true"
+                android:onClick="showFoldersOnline"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/folders_wite"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/service_online"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.95"
+                android:background="@color/colorTransparent"
+                android:cropToPadding="true"
+                android:onClick="showServiceKnotsOnline"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/service_wite"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/events_online"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:alpha="0.95"
+                android:background="@color/colorTransparent"
+                android:cropToPadding="true"
+                android:onClick="showEventsOnline"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/event_baloon_wite"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.95"
+        android:background="@color/colorTransparent"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+
+        />
+
+</LinearLayout>

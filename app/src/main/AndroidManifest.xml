@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.cherrycider.android.wiknot">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        // android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        //android:theme="@style/Theme.AppCompat"
+        //android:theme="@style/AppTheme"
+        //android:theme="@android:style/Theme.NoTitleBar">
+
+        <activity android:name=".MainActivity">
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <receiver
+            android:name=".UdpReceiverServiceWakefulBroadcastReceiver"
+            android:label="@string/app_name"
+            android:enabled="true" >
+        </receiver>
+
+        <receiver
+            android:name=".FileReceiverServiceWakefulBroadcastReceiver"
+            android:label="@string/app_name"
+            android:enabled="true" >
+        </receiver>
+
+
+        <service android:name=".UdpReceiverService"  android:label="UdpReceiverService">
+
+        </service>
+
+        <service android:name=".FileReceiverService"  android:label="FileReceiverService">
+
+        </service>
+
+        <service android:name=".OnlinePollService"  android:label="OnlinePollService">
+
+        </service>
+
+        <service android:name=".OnlinePulse"  android:label="OnlinePulse">
+
+        </service>
+
+
+        <activity android:name=".PopUp"  android:label="PopUp">
+
+            <intent-filter>
+                <action android:name="com.cherrycider.udpX.messageIsReceived"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".WelcomeIntro"  android:label="WelcomeIntro">
+
+            <intent-filter>
+                <action android:name="com.cherrycider.udpX.intro"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+        </activity>
+
+
+
+
+        <activity android:name=".Preferences"  android:label="Preferences">
+
+            <intent-filter>
+                <action android:name="com.cherrycider.udpX.preferences"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".PersonDetails"  android:label="PersonDetails">
+
+            <intent-filter>
+                <action android:name="com.cherrycider.udpX.mydetails"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".User"  android:label="User">
+
+            <intent-filter>
+                <action android:name="com.cherrycider.udpX.user"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".CropImage"  android:label="CropImage">
+
+        </activity>
+
+
+
+
+    </application>
+
+</manifest>
+
+
+
+
